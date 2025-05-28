@@ -1,44 +1,11 @@
 {
   "name": "datlips_art_engine",
-  "version": "1.5.0",
-  "description": "Datlips Art Engine (Hashlips fork) is a tool used to create genrative artworks based on provided layers.",
+  "version": "2.0.0",
+  "description": "Datlips Art Engine (Hashlips fork) is a tool used to create generative artworks based on provided traits.",
   "main": "index.js",
-  "bin": "index.js",
-  "pkg": {
-    "assets": [
-      "layers/**/*",
-      "node_modules/**/*",
-      "src/**/*"
-    ]
-  },
   "scripts": {
-    "build": "node index.js",
-    "generate": "node index.js",
-    "generate_photos": "node utils/generatePhotos.js",
-    "rarity": "node utils/rarityFromMetadata.js",
-    "preview": "node utils/preview.js",
-    "pixelate": "node utils/pixelate.js",
-    "update": "node utils/update_info.js",
-    "preview_gif": "node utils/preview_gif.js",
-    "generate_metadata": "node utils/generate_metadata.js",
-    "clean": "node utils/cleanMetadata.js",
-    "remove": "node utils/removeAttributes",
-    "rename": "node utils/renameAttributes",
-    "archive": "node utils/archiveCollection.js",
-    "restore": "node utils/restoreCollection.js",
-    "upload": "node utils/ipfsUpload.js"
+    "test": "test"
   },
-  "author": "Daniel Eugene Botha (HashLips) & Datboi 1337",
-  "license": "MIT",
-  "dependencies": {
-    "canvas": "^2.8.0",
-    "cli-progress": "^3.12.0",
-    "dotenv": "^16.4.7",
-    "enquirer": "^2.4.1",
-    "ffmpeg-static": "^5.2.0",
-    "fs-extra": "^11.2.0",
-    "gif-encoder-2": "^1.0.5",
-    "sha1": "^1.1.1",
-    "thirdweb": "^5.67.0"
-  }
+  "author": "datboi1337",
+  "license": "MIT"
 }
